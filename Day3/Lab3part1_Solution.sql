@@ -88,7 +88,7 @@ insert into employee (dno, ssn,superssn , salary)
 values (30,102672, 112233, 3000)
 
 --14.	Insert another employee with personal data your friend as new employee in department number
---30, SSN = 102660, but don’t enter any value for salary or supervisor number to him.
+--30, SSN = 102660, but donâ€™t enter any value for salary or supervisor number to him.
 
 insert into employee (dno,ssn)
 values (30,102660)

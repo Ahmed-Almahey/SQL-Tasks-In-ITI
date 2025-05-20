@@ -56,7 +56,7 @@ group by dname, Dnum
 having avg(salary) <(select avg(salary) from employee)
 
 
---7.	Retrieve a list of employee’s names and the projects names they are working on ordered by department number
+--7.	Retrieve a list of employeeâ€™s names and the projects names they are working on ordered by department number
  --and within each department, ordered alphabetically by last name, first name.
 
  select pname , concat(fname,' ',lname) as [employee name]
@@ -93,7 +93,7 @@ from dependent
 where essn = ssn
 )
 
---11.	In the department table insert new department called "DEPT IT”, with id 100, employee with
+--11.	In the department table insert new department called "DEPT ITâ€, with id 100, employee with
 --SSN = 112233 as a manager for this department. The start date for this manager is '1-11-2006'
 
 insert into Departments 
@@ -144,7 +144,7 @@ delete from employee
 where ssn = 223344
 
 
---14.	Try to update all salaries of employees who work in Project ‘Al Rabwah’ by 30%
+--14.	Try to update all salaries of employees who work in Project â€˜Al Rabwahâ€™ by 30%
 
 update employee 
 set salary *=1.3

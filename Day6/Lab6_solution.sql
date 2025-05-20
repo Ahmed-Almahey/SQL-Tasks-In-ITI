@@ -150,7 +150,7 @@ where dep_no= deptNo and fname = 'james'
 
 
 --7.	Change the enter date for the projects for those employees who work in project p1 and 
---belong to department ‘Sales’. The new date is 12.12.2007.
+--belong to department â€˜Salesâ€™. The new date is 12.12.2007.
 
 update Works_On 
 set Enter_Date = '12/12/2007'

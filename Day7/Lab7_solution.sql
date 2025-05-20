@@ -100,7 +100,7 @@ SELECT * FROM getMgr(5)
 ---If string='first name' returns student first name
 ---If string='last name' returns student last name 
 ---If string='full name' returns Full Name from student table 
----Note: Use “ISNULL” function
+---Note: Use â€œISNULLâ€ function
 create function stName(@name varchar(10))
 returns @t table
 (

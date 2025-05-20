@@ -69,7 +69,7 @@ from Instructor
 order by salary desc
 
 --11.	 Select instructor name and his salary but if there is no salary
---display instructor bonus keyword. ìuse coalesce Functionî
+--display instructor bonus keyword. ‚Äúuse coalesce Function‚Äù
 
 select ins_name ,coalesce (convert(varchar(20),salary), 'instructor bonus')
 from Instructor
@@ -86,7 +86,7 @@ from Student x inner join Student y
 on x.St_Id= y.St_super
 
 --14.	Write a query to select the highest two salaries in Each Department for instructors 
---who have salaries. ìusing one of Ranking Functionsî
+--who have salaries. ‚Äúusing one of Ranking Functions‚Äù
 
 select salary as [top 2 salaries in each dep] , Rn
 from
@@ -95,7 +95,7 @@ from Instructor) as newtable
 where rn  < = 2 and salary is not null
 
 
---15.	 Write a query to select a random student from each department.  ìusing one of Ranking Functionsî
+--15.	 Write a query to select a random student from each department.  ‚Äúusing one of Ranking Functions‚Äù
 
 select *
 from 
@@ -109,7 +109,7 @@ where Rn = 1
 use AdventureWorks2012
 
 --1.	Display the SalesOrderID, ShipDate of the SalesOrderHeader table (Sales schema) to 
---show SalesOrders that occurred within the period ë7/28/2002í and ë7/29/2014í
+--show SalesOrders that occurred within the period ‚Äò7/28/2002‚Äô and ‚Äò7/29/2014‚Äô
 
 select SalesOrderID, ShipDate
 from Sales.SalesOrderHeader
@@ -193,7 +193,7 @@ select rowguid ,Name, SalesPersonID, Demographics into store_Archive1
 from Sales.Store
 where 1 =2
 
---12.	Using union statement, retrieve the todayís date in different styles using convert or format funtion.
+--12.	Using union statement, retrieve the today‚Äôs date in different styles using convert or format funtion.
 
 select format(getdate(), 'yyyy-MM-dd')                  
 union

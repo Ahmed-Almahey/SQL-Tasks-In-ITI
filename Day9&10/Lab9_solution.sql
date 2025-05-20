@@ -18,9 +18,9 @@ getnum
 
 
 --2.Create a stored procedure that will check for the # of employees in the project p1 
---if they are more than 3 print message to the user “'The number of employees in the 
---project p1 is 3 or more'” if they are less display a message to the user 
---“'The following employees work for the project p1'” in addition 
+--if they are more than 3 print message to the user â€œ'The number of employees in the 
+--project p1 is 3 or more'â€ if they are less display a message to the user 
+--â€œ'The following employees work for the project p1'â€ in addition 
 --to the first name and last name of each one. [Company DB] 
 
 use SD
@@ -101,7 +101,7 @@ as
     
 
 --5.	Create a trigger to prevent anyone from inserting a new record in the Department table [ITI DB]
---“Print a message for user to tell him that he can’t insert a new record in that table”
+--â€œPrint a message for user to tell him that he canâ€™t insert a new record in that tableâ€
 
 use iti
 
@@ -109,7 +109,7 @@ create trigger t2
 on department 
 instead of insert 
 as
-  select 'Print a message for user to tell him that he can’t insert a new record in that table'
+  select 'Print a message for user to tell him that he canâ€™t insert a new record in that table'
 
 
 --6.Create a trigger that prevents the insertion Process for Employee table in March [Company DB].
@@ -127,8 +127,8 @@ as
 	select * from inserted 
 
 --7.	Create a trigger on student table after insert to add Row in Student Audit table
---(Server User Name , Date, Note) where note will be “[username] Insert New Row with 
---Key=[Key Value] in table [table name]”
+--(Server User Name , Date, Note) where note will be â€œ[username] Insert New Row with 
+--Key=[Key Value] in table [table name]â€
 
 --Server User Name		Date 	Note 
 
@@ -151,7 +151,7 @@ as
 
 
 --8.Create a trigger on student table instead of delete to add Row in Student Audit table
---(Server User Name, Date, Note) where note will be“ try to delete Row with Key=[Key Value]”
+--(Server User Name, Date, Note) where note will beâ€œ try to delete Row with Key=[Key Value]â€
 
 create trigger t4
 on student 
@@ -275,7 +275,7 @@ getMgr 5
 ---If string='first name' returns student first name
 ---If string='last name' returns student last name 
 ---If string='full name' returns Full Name from student table 
----Note: Use “ISNULL” function
+---Note: Use â€œISNULLâ€ function
 
 create proc stName(@name varchar(10))
 AS
